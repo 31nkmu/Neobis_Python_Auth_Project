@@ -38,6 +38,7 @@ class CustomUser(AbstractUser):
     email = models.EmailField(unique=True)
     is_active = models.BooleanField(default=False)
     password = models.CharField(max_length=128, blank=True)
+    activation_code = models.CharField(max_length=128, blank=True)
 
     objects = UserManager()
 
