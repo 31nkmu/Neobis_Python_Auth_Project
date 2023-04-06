@@ -10,3 +10,12 @@ def send_activation_link(email, activation_code):
         config('EMAIL_HOST_USER'),
         [email]
     )
+
+
+def send_activation_code(email, activation_code):
+    send_mail(
+        'Пароль активации',
+        activation_code,
+        config('EMAIL_HOST_USER'),
+        [email],
+    )
