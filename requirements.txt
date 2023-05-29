@@ -1,6 +1,0 @@
-django
-djangorestframework
-djangorestframework-simplejwt
-psycopg2-binary
-python-decouple
-dj-config-url
